@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"docker-forward/internal/dockerx"
-	"docker-forward/internal/forward"
+	"github.com/JeremieCHN/docker-forward/internal/dockerx"
+	"github.com/JeremieCHN/docker-forward/internal/forward"
 )
 
 const (

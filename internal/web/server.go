@@ -14,8 +14,8 @@ import (
 	"strings"
 	"time"
 
-	"docker-forward/internal/dockerx"
-	"docker-forward/internal/rule"
+	"github.com/JeremieCHN/docker-forward/internal/dockerx"
+	"github.com/JeremieCHN/docker-forward/internal/rule"
 )
 
 //go:embed static

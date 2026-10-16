@@ -15,9 +15,9 @@ import (
 	"syscall"
 	"time"
 
-	"docker-forward/internal/dockerx"
-	"docker-forward/internal/rule"
-	"docker-forward/internal/web"
+	"github.com/JeremieCHN/docker-forward/internal/dockerx"
+	"github.com/JeremieCHN/docker-forward/internal/rule"
+	"github.com/JeremieCHN/docker-forward/internal/web"
 )
 
 var version = "1.0.0"

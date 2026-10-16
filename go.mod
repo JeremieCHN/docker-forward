@@ -1,4 +1,4 @@
-module docker-forward
+module github.com/JeremieCHN/docker-forward
 
 go 1.26.4
 
