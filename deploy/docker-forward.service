@@ -1,0 +1,14 @@
+[Unit]
+Description=docker-forward - dynamic port forwarding to docker containers
+After=docker.service network-online.target
+Requires=docker.service
+
+[Service]
+ExecStart=/usr/local/bin/docker-forward -rules /etc/docker-forward/rules.json
+Restart=always
+RestartSec=2
+# 需要访问 docker.sock 及绑定特权端口；非 root 运行时请改用 docker 组 + AmbientCapabilities=CAP_NET_BIND_SERVICE
+User=root
+
+[Install]
+WantedBy=multi-user.target
